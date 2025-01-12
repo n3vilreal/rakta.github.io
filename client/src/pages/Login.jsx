@@ -13,7 +13,6 @@ export default function LogIn() {
   return (
     <>
     <Navbar/>
-
     <div className="relative overflow-hidden">
         {isSignUp ? (
           <SignUp handelToggle={handelToggle} />
