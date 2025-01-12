@@ -31,24 +31,15 @@ export default function Navbar() {
 
         <div className="flex items-center space-x-8 mr-10 w-[75%]">
           {/* Navigation */}
-          <Navigation />
-          {/* Login / Logout */}
-          <div className="flex flex-col justify-center w-[10%] text-white text-xl font-semibold space-y-2">
-            {userLoggedIn ? (
-              <button
-                onClick={logoutClick}
-                className="bg-red-600 py-1 rounded-xl cursor-pointer hover:text-red-600 hover:p-2 hover:bg-white ease-in-out transition-all duration-300"
-              >
-                Log Out
-              </button>
-            ) : (
-              <button
-                onClick={loginClick}
-                className="bg-red-600 py-1 rounded-xl cursor-pointer hover:text-red-600 hover:p-2 hover:bg-white ease-in-out transition-all duration-300"
-              >
-                Log In
-              </button>
-            )}
+          <Navigation/>
+          {/* Login */}
+          <div className="flex flex-col justify-center  w-[10%] text-white text-xl font-semibold space-y-2">
+            <button
+              onClick={loginClick}
+              className="bg-red-600 py-1 rounded-xl cursor-pointer hover:text-red-600 hover:p-2 hover:bg-white ease-in-out transition-all duration-300"
+            >
+              Log In
+            </button>
           </div>
         </div>
       </div>

@@ -14,7 +14,6 @@ export default function Navbar() {
       <div className="main bg-[#28282B] flex items-center space-x-20 py-2 justify-between w-[100%] sticky top-0 z-10 md:hidden">
         {/* Logo */}
         <img src={LogoWhite} alt="" className="h-14 ml-6" />
-        <Navigation/>
         <div className="flex justify-end space-x-8 pr-5 w-[75%]">
           {/* Login */}
           <div className="flex items-center space-x-7 text-white text-md font-semibold">

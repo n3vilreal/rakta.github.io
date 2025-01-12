@@ -12,7 +12,6 @@ export default function Navigation() {
     
     <>
       <ul className="flex text-white text-xl font-semibold w-[80%] space-x-6 
-                    absolute right-0 top-16 z-50
                     max-md:flex-col max-md:bg-red-300 max-md:font-medium max-md:space-x-0">
             <span
               className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
