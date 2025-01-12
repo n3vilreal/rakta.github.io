@@ -44,7 +44,6 @@ function NumberOtp() {
         setLoading(false);
         setShowOTP(true);
         // toast.success("OTP sent successfully!");
-        console.log("OTP sent successfully!");
         alert("OTP sent successfully!");
       })
       .catch((error) => {
