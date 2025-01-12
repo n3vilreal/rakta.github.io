@@ -9,7 +9,7 @@ import { FaInstagram } from "react-icons/fa";
 
 function Home() {
   return (
-    <div id="home" className="main h-[100%] w-[100%] flex">
+    <div id="Home" className="main h-[100%] w-[100%] flex">
         
         {/* Left Partation */}
         <div className='left-partation h-[100%] w-[50%] flex max-md:hidden'>
