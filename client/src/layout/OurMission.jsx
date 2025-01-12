@@ -6,7 +6,7 @@ export default function OurMission() {
   return (
     <>
     <div id="ourMission" className='main flex w-full justify-center items-center'>
-        <div className='container flex flex-col  justify-center items-center mt-32 space-y-12 max-md:mt-5' >
+        <div className='container flex flex-col  justify-center items-center mt-16 space-y-12 max-md:mt-5' >
 
             <div className="header text-6xl font-serif font-bold max-md:ml-3">
                 <span>Our Mission</span>

@@ -27,6 +27,7 @@ export default function LandingPage() {
       <Element name="home">
         <Home />
       </Element>
+      <hr  className="mt-5"/>
       <Element name="our-mission">
         <OurMission />
       </Element>
