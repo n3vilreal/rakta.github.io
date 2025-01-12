@@ -56,16 +56,43 @@ npm install -D tailwindcss postcss autoprefixer
 ```bash
 npx tailwindcss init -p
 ```
+7. Installing Firebase
 
+```bash
+  npm install firebase
+```
+
+
+   
 ## 🧑‍💻Usage
 
 There are two parts to use this platform and they are either donor and acceptor:
 
 **For Donor**
+
 *Steps:*
-1. Go to ![Raktas]
+1. Go to ![Rakta]
 2. Click Donate Now.
 3. You will be redirected to sign in/ sign up page.
 4. Sign in giving all the required details.
 5. If you have already created your profile just sign in.
 6. Now you can view blood request and your profile is created.
+
+**For Accceptors**
+
+*Steps:*
+1. Go to ![Rakta]
+2. 
+
+
+
+
+
+
+
+
+
+
+
+
+
