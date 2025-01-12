@@ -5,6 +5,9 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Available scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Contributors](#contributors)
 
 ## 📖Introduction
 - *Rakta is a project based for Health related sector.Due to high accidents and blood loss,blood is vital.Every individual couldnot buy blood bag due to high cost for them.
@@ -13,8 +16,8 @@
   Acceptor can just put his location and blood group number then location of the donor appear on the screen and he can call him/her and go for further process.*
   
 ## ⚙Features
-- **Request Blood** : 
-- **Donate Blood** :
+- **Requesting Blood** : 
+- **Donating Blood** :
 - **Easy Contact** :
 - **Map location** :
 - **Fundraiser** :
@@ -56,16 +59,54 @@ npm install -D tailwindcss postcss autoprefixer
 ```bash
 npx tailwindcss init -p
 ```
+7. Installing Firebase
 
-## 🧑‍💻Usage
+```bash
+  npm install firebase
+```
+
+
+   
+## ✍Usage
 
 There are two parts to use this platform and they are either donor and acceptor:
 
-**For Donor**
+- **For Donor**
+
 *Steps:*
-1. Go to ![Raktas]
+1. Go to ![Rakta]
 2. Click Donate Now.
 3. You will be redirected to sign in/ sign up page.
 4. Sign in giving all the required details.
 5. If you have already created your profile just sign in.
 6. Now you can view blood request and your profile is created.
+
+- **For Accceptors**
+
+*Steps:*
+1. Go to ![Rakta]
+2. 
+
+
+
+## 📜Available Scripts
+
+
+
+
+## 📏Project Structure
+
+
+
+## 🧑‍💻Contributors
+
+**Thank you all for your Hardwork 🙌**
+
+<table>
+   <tbody>
+<td align="center" valign="top" width="14.28%"><a href="https://github.com/Prateek19-png"><img src=https://avatars.githubusercontent.com/u/191016717?s=100" width="100px;" alt="Prateek Dangal"/><br /><sub><b>Prateek Dangal</b></sub></a><br /><a href="https://github.com/Prateek19-png" title="Github">💻</a> <a href="#Prateek19-png" title="Project Manager>🧑‍💻</a></td>
+
+
+      
+   </tbody>
+</table>

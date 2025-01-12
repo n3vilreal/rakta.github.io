@@ -1,26 +1,26 @@
 import React from 'react';
-import LogoWhite from '../assets/logo-white.png';
+import LogoWhite from '../assets/logoForBlack.png';
 
 export default function Navbar() {
   return (
     <>
-      <div className='main bg-[#28282B]'>
+      <div className='main bg-[#28282B] flex items-center space-x-20 py-2 justify-between'>
         {/* Logo */}
-        <img src={LogoWhite} alt="" className='h-24'/> 
+        <img src={LogoWhite} alt="" className='h-24 ml-6'/> 
 
-        <div>
+        <div className='flex  items-center  space-x-8 mr-10 w-[75%]'>
           {/* Navigation */}
-            <div>
-              <ul>
+              <ul className='flex text-white text-xl font-semibold w-[80%] space-x-6'>
                 <li>ABOUT US</li>
                 <li>BLOOD COMPABILITY CHECKER</li>
                 <li>BLOOD STORIES</li>
                 <li>MAPS</li>
                 <li>FUNDRAISER</li>
               </ul>
-            </div>
-
-          <div></div>
+          {/* Login */}
+          <div className='flex flex-col justify-center  w-[10%] text-white text-xl font-semibold space-y-2'>
+            <button className='border-4 border-[#FCDFDF] rounded-3xl'>Log In</button>
+          </div>
         </div>
 
       </div>
