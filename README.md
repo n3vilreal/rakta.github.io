@@ -63,8 +63,6 @@ npx tailwindcss init -p
 ```bash
   npm install firebase
 ```
-
-
    
 ## ✍Usage
 

@@ -34,7 +34,10 @@ function Home() {
                 </span>
               </div>
               {/* Donate blood button */}
-              <button className="donate text-4xl mt-5 flex items-center text-red-600 font-semibold border-4 border-red-600 px-3 py-2 rounded-full" style={ {fontFamily: "'Saira Condensed', sans-serif" }}>Donate Blood Now<MdKeyboardDoubleArrowRight className='mt-[5px]'/></button>
+              <button className="donate group text-4xl mt-5 flex items-center text-red-600 font-semibold border-4 border-red-600 px-3 py-2 rounded-full transition-all duration-300 ease-in-out hover:bg-red-600 hover:text-white" 
+              style={ {fontFamily: "'Saira Condensed', sans-serif" }}>
+                Donate Blood Now
+                <MdKeyboardDoubleArrowRight className='mt-[5px] transition-all duration-300 ease-in-out group-hover:translate-x-2'/></button>
               {/* Contact Information */}
               <div className="contact flex justify-between mt-32 w-[80%]">
                 <span className="mail flex items-center space-x-2">
