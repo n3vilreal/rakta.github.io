@@ -20,8 +20,12 @@
 - **Fundraiser** :
 
 ## 🔍Installation
-**To be raktas please follow the following**
-1. Step 1: Go to [Raktas]()
-2. step 2:
+**Follow these steps to get started with us**
+1. Clone the respitory:
 
-## 🧑‍💻Usage
+```bash
+git clone https://github.com/Noskathon-Lite/Code_Blooded.git
+```
+
+2. 
+## Usage
