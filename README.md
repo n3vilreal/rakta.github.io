@@ -22,7 +22,7 @@
 ## 🔍Installation
 **Follow these steps to get started with us**
 
-1. Clone the respitory:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/Noskathon-Lite/Code_Blooded.git
@@ -34,22 +34,28 @@ git clone https://github.com/Noskathon-Lite/Code_Blooded.git
 cd client
 ```
 
-3. Node module installation
+3. Node module installation:
 
 ```bash
 npm i
 ```
 
-4. Settinup Routes
+4. Settinup Routes:
 
 ```bash
 npm i react-router-dom
 ```
 
-5. Installing tail wind
+5. Installing tailwind:
 
 ```bash
 npm install -D tailwindcss postcss autoprefixer
 ```
-6. Setting up tail wind
-## Usage
+6. Setting up tailwind:
+
+```bash
+npx tailwindcss init -p
+```
+
+## 🧑‍💻Usage
+
