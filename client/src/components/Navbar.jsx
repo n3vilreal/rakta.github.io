@@ -1,15 +1,12 @@
 import React from "react";
 import LogoWhite from "../assets/logoForBlack.png";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
+import Navigation from "./Navigation";
 
 export default function Navbar() {
   const navigate = useNavigate();
   const loginClick = () => {
     navigate("/login");
-  };
-  const handleRedirectAndScroll = (section) => {
-    // Navigate to "/" with the scrollTo parameter
-    navigate(`/?scrollTo=${section}`);
   };
   return (
     <>
@@ -19,39 +16,7 @@ export default function Navbar() {
 
         <div className="flex  items-center  space-x-8 mr-10 w-[75%]">
           {/* Navigation */}
-          <ul className="flex text-white text-xl font-semibold w-[80%] space-x-6 ">
-          <span
-              className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
-              onClick={() => handleRedirectAndScroll("Home")}
-            >
-              Home
-            </span>
-            <span
-              className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
-              onClick={() => handleRedirectAndScroll("ourMission")}
-            >
-              Our Mission
-            </span>
-
-            <span
-              className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
-              onClick={() => handleRedirectAndScroll("map")}
-            >
-              Blood Compatibility
-            </span>
-            <span
-              className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
-              onClick={() => handleRedirectAndScroll("map")}
-            >
-              Map
-            </span>
-            <span
-              className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
-              onClick={() => handleRedirectAndScroll("map")}
-            >
-              fundraiser
-            </span>
-          </ul>
+          <Navigation />
           {/* Login */}
           <div className="flex flex-col justify-center  w-[10%] text-white text-xl font-semibold space-y-2">
             <button
