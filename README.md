@@ -20,9 +20,9 @@
 - **Fundraiser** :
 
 ## 🔍Installation
-**Follow these steps to get started with us**
+**Follow these steps to get started with Rakta**
 
-1. Clone the repository:
+1. Clone the repositories:
 
 ```bash
 git clone https://github.com/Noskathon-Lite/Code_Blooded.git
@@ -59,3 +59,13 @@ npx tailwindcss init -p
 
 ## 🧑‍💻Usage
 
+There are two parts to use this platform and they are either donor and acceptor:
+
+**For Donor**
+*Steps:*
+1. Go to ![Raktas]
+2. Click Donate Now.
+3. You will be redirected to sign in/ sign up page.
+4. Sign in giving all the required details.
+5. If you have already created your profile just sign in.
+6. Now you can view blood request and your profile is created.
