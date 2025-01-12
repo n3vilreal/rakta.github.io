@@ -5,6 +5,9 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Available scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Contributors](#contributors)
 
 ## 📖Introduction
 - *Rakta is a project based for Health related sector.Due to high accidents and blood loss,blood is vital.Every individual couldnot buy blood bag due to high cost for them.
@@ -64,7 +67,7 @@ npx tailwindcss init -p
 
 
    
-## 🧑‍💻Usage
+## ✍Usage
 
 There are two parts to use this platform and they are either donor and acceptor:
 
@@ -86,13 +89,13 @@ There are two parts to use this platform and they are either donor and acceptor:
 
 
 
+## 📜Available Scripts
 
 
 
 
+## 📏Project Structure
 
 
 
-
-
-
+## 🧑‍💻Contributors
