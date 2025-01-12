@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SignIn from '../layout/SignIn';
 import SignUp from '../layout/SignUp';
+import Navbar from '../components/Navbar';
 
 export default function LogIn() {
   const [isSignUp, setIsSignUp] = useState(true);
@@ -10,6 +11,8 @@ export default function LogIn() {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="relative overflow-hidden">
         {isSignUp ? (
           <SignUp handelToggle={handelToggle} />
@@ -17,5 +20,6 @@ export default function LogIn() {
           <SignIn handelToggle={handelToggle} />
         )}
     </div>
+    </>
   );
 }
