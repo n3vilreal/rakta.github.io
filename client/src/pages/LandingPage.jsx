@@ -1,15 +1,33 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Home from '../layout/Home';
-import OurMission from '../layout/OurMission';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import {React, useEffect } from "react";
+import Navbar from "../components/Navbar";
+import Home from "../layout/Home";
+import OurMission from "../layout/OurMission";
+import { useLocation } from "react-router-dom";
+import { Element, scroller } from "react-scroll";
 
 export default function LandingPage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const scrollTo = params.get("scrollTo");
+
+    if (scrollTo) {
+      scroller.scrollTo(scrollTo, {
+        duration: 500,
+        smooth: true,
+      });
+    }
+  }, [location]);
   return (
     <div>
-        <Navbar/>
-        <Home/>
-        <OurMission/>
+      <Navbar />
+      <Element name="home">
+        <Home />
+      </Element>
+      <Element name="our-mission">
+        <OurMission />
+      </Element>
     </div>
-  )
+  );
 }
