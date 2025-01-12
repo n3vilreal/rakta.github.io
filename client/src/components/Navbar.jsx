@@ -13,40 +13,40 @@ export default function Navbar() {
   };
   return (
     <>
-      <div className="main bg-[#28282B] flex items-center space-x-20 py-2 justify-between w-[100%] sticky top-0 z-10">
+      <div className="main bg-[#28282B] flex items-center space-x-20 py-2 justify-between w-[100%] sticky top-0 z-10 max-md:hidden">
         {/* Logo */}
         <img src={LogoWhite} alt="" className="h-24 ml-6" />
 
         <div className="flex  items-center  space-x-8 mr-10 w-[75%]">
           {/* Navigation */}
-          <ul className="flex text-white text-xl font-semibold w-[80%] space-x-6">
+          <ul className="flex text-white text-xl font-semibold w-[80%] space-x-6 ">
           <span
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
               onClick={() => handleRedirectAndScroll("Home")}
             >
               Home
             </span>
             <span
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
               onClick={() => handleRedirectAndScroll("ourMission")}
             >
               Our Mission
             </span>
 
             <span
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
               onClick={() => handleRedirectAndScroll("map")}
             >
               Blood Compatibility
             </span>
             <span
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
               onClick={() => handleRedirectAndScroll("map")}
             >
               Map
             </span>
             <span
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
               onClick={() => handleRedirectAndScroll("map")}
             >
               fundraiser
@@ -56,7 +56,7 @@ export default function Navbar() {
           <div className="flex flex-col justify-center  w-[10%] text-white text-xl font-semibold space-y-2">
             <button
               onClick={loginClick}
-              className=" cursor-pointer border-4 border-[#FCDFDF] rounded-3xl"
+              className="underline cursor-pointer hover:text-red-500 ease-in-out transition-all duration-300"
             >
               Log In
             </button>

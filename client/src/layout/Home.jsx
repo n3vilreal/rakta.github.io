@@ -9,18 +9,19 @@ import { FaInstagram } from "react-icons/fa";
 
 function Home() {
   return (
-    <div id='home' className="main h-[100%] w-[100%] flex">
+    <div id="home" className="main h-[100%] w-[100%] flex">
         
         {/* Left Partation */}
-        <div className='left-partation h-[100%] w-[50%] flex'>
+        <div className='left-partation h-[100%] w-[50%] flex max-md:hidden'>
             <img src={HomeBackground} alt="Home Background" className="min-h-100 min-w-100" />
         </div>
 
         {/* Right Partation */}
-        <div className='right-partation h-[100%] w-[50%] flex flex-col justify-center'>
-            <div className="right-components ml-6 mt-28">
-              <div className='description w-[65%]'>
-                <span style={ {fontFamily: "'Saira Condensed', sans-serif" }} className="description text-7xl font-bold leading-tight">
+        <div className='right-partation h-[100%] w-[50%] flex flex-col justify-center max-md:w-[100w]'>
+            <div className="right-components ml-6 mt-28 max-md:mt-12">
+              <div className='description w-[65%] max-md:w-[100%]'>
+                <span style={ {fontFamily: "'Saira Condensed', sans-serif" }} 
+                      className="description text-7xl font-bold leading-tight">
                   Eliminate Blood <br/> Scarcity in <span className='text-red-600'>Nepal</span>
                 </span>
                 <span className='detailed-description text-2xl ml-3 leading-normal tracking-wider' style={ {fontFamily: "'Saira Condensed', sans-serif" }}>
