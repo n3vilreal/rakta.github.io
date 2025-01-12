@@ -13,8 +13,8 @@
   Acceptor can just put his location and blood group number then location of the donor appear on the screen and he can call him/her and go for further process.*
   
 ## ⚙Features
-- **Request Blood** : 
-- **Donate Blood** :
+- **Requesting Blood** : 
+- **Donating Blood** :
 - **Easy Contact** :
 - **Map location** :
 - **Fundraiser** :
@@ -68,7 +68,7 @@ npx tailwindcss init -p
 
 There are two parts to use this platform and they are either donor and acceptor:
 
-**For Donor**
+- **For Donor**
 
 *Steps:*
 1. Go to ![Rakta]
@@ -78,7 +78,7 @@ There are two parts to use this platform and they are either donor and acceptor:
 5. If you have already created your profile just sign in.
 6. Now you can view blood request and your profile is created.
 
-**For Accceptors**
+- **For Accceptors**
 
 *Steps:*
 1. Go to ![Rakta]
