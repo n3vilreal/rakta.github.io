@@ -4,6 +4,7 @@ import Home from "../layout/Home";
 import OurMission from "../layout/OurMission";
 import { useLocation } from "react-router-dom";
 import { Element, scroller } from "react-scroll";
+import NavbarResponsive from "../components/NavbarResponsive";
 
 export default function LandingPage() {
   const location = useLocation();
@@ -22,6 +23,7 @@ export default function LandingPage() {
   return (
     <div>
       <Navbar />
+      <NavbarResponsive />
       <Element name="home">
         <Home />
       </Element>
