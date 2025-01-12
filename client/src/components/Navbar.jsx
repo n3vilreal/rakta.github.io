@@ -16,7 +16,7 @@ export default function Navbar() {
 
         <div className="flex  items-center  space-x-8 mr-10 w-[75%]">
           {/* Navigation */}
-          <Navigation />
+          <Navigation/>
           {/* Login */}
           <div className="flex flex-col justify-center  w-[10%] text-white text-xl font-semibold space-y-2">
             <button
