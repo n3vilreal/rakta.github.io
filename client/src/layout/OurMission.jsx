@@ -1,11 +1,12 @@
 import React from 'react';
 import Image1 from '../assets/manDonatingBlood.jpg';
-import Image2 from '../assets/secongMissionPhoto.png';
+import Image2 from '../assets/bloodBag.jpg';
 
 export default function OurMission() {
   return (
     <>
-    <div className='container flex flex-col w-[100%] h-[100%]  justify-center items-center mt-32 space-y-12' >
+    <div className='main flex w-full justify-center items-center'>
+    <div className='container flex flex-col  justify-center items-center mt-32 space-y-12' >
 
         <div className="header text-6xl font-serif font-bold">
             <span>Our Mission</span>
@@ -45,9 +46,8 @@ export default function OurMission() {
                 
             </div>
 
-            
-
         </div>
+    </div>
     </div>
     </>
   )
