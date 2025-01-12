@@ -15,12 +15,12 @@ export default function Navbar() {
 
         <div className='flex  items-center  space-x-8 mr-10 w-[75%]'>
           {/* Navigation */}
-              <ul className='flex text-white text-xl font-semibold w-[80%] space-x-6'>
-                <Link to="/" >HOME</Link>
-                <Link>OUR MISSION</Link>
-                <Link>BLOOD STORIES</Link>
-                <Link>MAPS</Link>
-                <Link>FUNDRAISER</Link>
+              <ul className='flex text-white text-xl font-semibold w-[80%] space-x-6  '>
+                <Link to="/"  className='hover:text-blue-400 transition-all duration-300 ease-in-out'>HOME</Link>
+                <Link className='hover:text-blue-400 transition-all duration-300 ease-in-out'>OUR MISSION</Link>
+                <Link className='hover:text-blue-400 transition-all duration-300 ease-in-out'>BLOOD STORIES</Link>
+                <Link className='hover:text-blue-400 transition-all duration-300 ease-in-out'>MAPS</Link>
+                <Link className='hover:text-blue-400 transition-all duration-300 ease-in-out'>FUNDRAISER</Link>
               </ul>
           {/* Login */}
           <div className='flex flex-col justify-center  w-[10%] text-white text-xl font-semibold space-y-2'>

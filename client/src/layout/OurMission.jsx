@@ -9,8 +9,8 @@ export default function OurMission() {
     <div className='container flex flex-col  justify-center items-center mt-32 space-y-12' >
 
         <div className="header text-6xl font-serif font-bold">
-            <span>Our Mission</span>
-            <hr className='bg-black h-1 w-60'/>
+            <span style={ {fontFamily: "'Saira Condensed', sans-serif" }}>Our Mission</span>
+            <hr className='bg-black h-1 w-36'/>
         </div>
 
         {/* Missions */}
