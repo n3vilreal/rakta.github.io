@@ -33,7 +33,9 @@ function Home() {
                    to create a holistic blood management cycle.
                 </span>
               </div>
+              {/* Donate blood button */}
               <button className="donate text-4xl mt-5 flex items-center text-red-600 font-semibold border-4 border-red-600 px-3 py-2 rounded-full" style={ {fontFamily: "'Saira Condensed', sans-serif" }}>Donate Blood Now<MdKeyboardDoubleArrowRight className='mt-[5px]'/></button>
+              {/* Contact Information */}
               <div className="contact flex justify-between mt-32 w-[80%]">
                 <span className="mail flex items-center space-x-2">
                   <FaEnvelope />
@@ -47,7 +49,6 @@ function Home() {
               </div>
             </div>
         </div>
-
     </div>
   ) 
 }

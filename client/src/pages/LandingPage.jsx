@@ -1,14 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Home from '../layout/Home';
-import BloodCompatible from '../layout/bloodCompatible';
+import OurMission from '../layout/OurMission';
 
 export default function LandingPage() {
   return (
     <div>
-        <Navbar />
+        <Navbar/>
         <Home/>
-        <BloodCompatible/>
+        <OurMission/>
     </div>
   )
 }
