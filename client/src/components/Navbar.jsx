@@ -4,7 +4,7 @@ import LogoWhite from '../assets/logoForBlack.png';
 export default function Navbar() {
   return (
     <>
-      <div className='main bg-[#28282B] flex items-center space-x-20 py-2 justify-between w-[100%] sticky top-0'>
+      <div className='z-10 main bg-[#28282B] flex items-center space-x-20 py-2 justify-between w-[100%] sticky top-0'>
         {/* Logo */}
         <img src={LogoWhite} alt="" className='h-24 ml-6'/> 
 
