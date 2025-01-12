@@ -73,6 +73,7 @@ There are two parts to use this platform and they are either donor and acceptor:
 
 - **For Donor**
 
+i) Making Id
 *Steps:*
 1. Go to ![Rakta]
 2. Click Donate Now.
@@ -81,11 +82,21 @@ There are two parts to use this platform and they are either donor and acceptor:
 5. If you have already created your profile just sign in.
 6. Now you can view blood request and your profile is created.
 
+ii) Donating
+  *steps*
+  1. After getting call open your m
+
+
+
+
 - **For Accceptors**
 
 *Steps:*
 1. Go to ![Rakta]
-2. 
+2. Press Map.
+3. Add Your blood type and you can see variation of blood matching with you.
+4. Chat/Call your matched donor.
+5. Now donor will come to the required place and helps you.
 
 
 
@@ -108,14 +119,14 @@ There are two parts to use this platform and they are either donor and acceptor:
    <a href="https://github.com/Prateek19-png"><img src=https://avatars.githubusercontent.com/u/191016717?s=100" width="100px;" alt="Prateek Dangal"/><br /><sub><b>Prateek Dangal</b></sub></a>
    <br />
    <a href="https://github.com/Prateek19-png" title="Github">💻</a>
-   <a href="#Prateek19-png" title="Project Manager">🧑‍💻</a>
+   <a href="#Prateek" title="Project Manager">🧑‍💻</a>
       </td>
 
 <td align="center" valign="top" width="14.28%">
    <a href="https://github.com/n3vilreal"><img src=https://avatars.githubusercontent.com/u/168754188?v=100" width="100px;" alt="Nebil Khanal"/><br /><sub><b>Nebil Khanal</b></sub></a>
    <br />
    <a href="https://github.com/n3vilreal" title="Github">💻</a>
-   <a href="#NebilK" title="Front End">🖥️</a>
+   <a href="#Nebil" title="Front End">🖥️</a>
    </td>
       
 <td align="center" valign="top" width="14.28%">
@@ -129,7 +140,7 @@ There are two parts to use this platform and they are either donor and acceptor:
    <a href="https://github.com/Naman-y1"><img src=https://avatars.githubusercontent.com/u/190712851?v=4=100" width="100px;" alt="Naman Yadav"/><br /><sub><b>Naman Yadav</b></sub></a>
    <br />
    <a href="https://github.com/Naman-y1" title="Github">💻</a>
-   <a href="#KravKo" title="Designer">📝</a>
+   <a href="#Naman" title="Designer">📝</a>
       </td>
       
    </tbody>
