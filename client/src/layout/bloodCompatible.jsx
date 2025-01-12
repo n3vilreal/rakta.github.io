@@ -2,7 +2,7 @@ import React from 'react'
 
 function bloodCompatible() {
   return (
-    <div>bloodCompatible</div>
+    <div className="h-screen w-screen bg-blue-300">bloodCompatible</div>
   )
 }
 
