@@ -63,7 +63,7 @@ export default function SignIn({ handelToggle }) {
         setIsSigningIn(true);
         setErrorMessage("");
         await verifyOTP(otp);
-        // Success will redirect via userLoggedIn state
+        navigate("/"); // Navigate to home page after successful OTP verification
       } catch (error) {
         setErrorMessage(error.message);
       } finally {
