@@ -13,7 +13,7 @@ function Home() {
         
         {/* Left Partation */}
         <div className='left-partation h-[100%] w-[50%] flex'>
-            <img src={HomeBackground} alt="Home Background" className="h-[100%] w-[100%]" />
+            <img src={HomeBackground} alt="Home Background" className="min-h-100 min-w-100" />
         </div>
 
         {/* Right Partation */}
@@ -35,7 +35,10 @@ function Home() {
               </div>
               <button className="donate text-4xl mt-5 flex items-center text-red-600 font-semibold border-4 border-red-600 px-3 py-2 rounded-full" style={ {fontFamily: "'Saira Condensed', sans-serif" }}>Donate Blood Now<MdKeyboardDoubleArrowRight className='mt-[5px]'/></button>
               <div className="contact flex justify-between mt-32 w-[80%]">
-                <span className="mail flex items-center self-end"><FaEnvelope />info@rakta.com.np</span>
+                <span className="mail flex items-center space-x-2">
+                  <FaEnvelope />
+                  <p>info@rakta.com.np</p>
+                </span>
                 <div className="socials flex space-x-4">
                   <button className="whatsapp text-3xl"><FaWhatsapp /></button>
                   <button className="facebook text-3xl"><TiSocialFacebookCircular /></button>
