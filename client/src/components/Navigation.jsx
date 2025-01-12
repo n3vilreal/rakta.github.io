@@ -36,12 +36,12 @@ export default function Navigation({ navbaeStatus, toggleNav }) {
         >
           Blood Compatibility
         </span>
-        <span
+        <RouterLink
           className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
-          onClick={() => handleRedirectAndScroll("map")}
+          to={"/map"}
         >
           Map
-        </span>
+        </RouterLink>
         <span
           className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
           onClick={() => handleRedirectAndScroll("map")}
