@@ -104,8 +104,7 @@ There are two parts to use this platform and they are either donor and acceptor:
 
 <table>
    <tbody>
-<td align="center" valign="top" width="14.28%"><a href=
-
+<td align="center" valign="top" width="14.28%"><a href="https://github.com/Prateek19-png"><img src=https://avatars.githubusercontent.com/u/191016717?s=100" width="100px;" alt="Prateek Dangal"/><br /><sub><b>Prateek Dangal</b></sub></a><br /><a href="https://github.com/Prateek19-png" title="Github">💻</a> <a href="#Prateek19-png" title="Project Manager>🧑‍💻</a></td>
 
 
       
