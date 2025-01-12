@@ -56,7 +56,7 @@ export default function Navbar() {
           <div className="flex flex-col justify-center  w-[10%] text-white text-xl font-semibold space-y-2">
             <button
               onClick={loginClick}
-              className="underline cursor-pointer hover:text-red-500 ease-in-out transition-all duration-300"
+              className="bg-red-600 py-1 rounded-xl cursor-pointer hover:text-red-600 hover:p-2 hover:bg-white ease-in-out transition-all duration-300"
             >
               Log In
             </button>
