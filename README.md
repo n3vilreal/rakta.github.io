@@ -63,11 +63,6 @@ npx tailwindcss init -p
 ```bash
   npm install firebase
 ```
-8. 
-
-```bash
-  npm i react-scroll
-```
    
 ## ✍Usage
 
