@@ -21,11 +21,18 @@
 
 ## 🔍Installation
 **Follow these steps to get started with us**
+
 1. Clone the respitory:
 
 ```bash
 git clone https://github.com/Noskathon-Lite/Code_Blooded.git
 ```
 
-2. 
+2. Directory:
+
+```bash
+cd client
+```
+
+3. 
 ## Usage
