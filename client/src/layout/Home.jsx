@@ -17,8 +17,8 @@ function Home() {
         </div>
 
         {/* Right Partation */}
-        <div className='right-partation h-[100%] w-[50%] flex flex-col justify-center max-md:w-[100w]'>
-            <div className="right-components ml-6 mt-28 max-md:mt-12 max-md:w-[90vw]">
+        <div className='right-partation h-[100%] w-[50%] flex flex-col justify-center max-md:w-[100w] max-md:mt-6'>
+            <div className="right-components ml-6 mt-32 max-md:mt-12 max-md:w-[90vw]">
               <div className='description w-[65%] max-md:w-[90vw]'>
                 <span style={ {fontFamily: "'Saira Condensed', sans-serif" }} 
                       className="description text-7xl font-bold leading-tight">
