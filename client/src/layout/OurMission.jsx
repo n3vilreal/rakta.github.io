@@ -5,7 +5,7 @@ import Image2 from '../assets/bloodBag.jpg';
 export default function OurMission() {
   return (
     <>
-    <div className='container mx-[150px] my-[75px] flex flex-col' >
+    <div className='container flex flex-col w-[100%] h-[100%]  justify-center items-center mt-32 space-y-12' >
 
         <div className="header text-6xl font-serif font-bold">
             <span>Our Mission</span>
@@ -13,10 +13,10 @@ export default function OurMission() {
         </div>
 
         {/* Missions */}
-        <div className='missions flex flex-col space-y-8'>
+        <div className='missions flex flex-col space-y-14'>
             
             {/* Mission 1 */}
-            <div className="mission-top w-full flex">
+            <div className="mission-top w-full flex space-x-16">
                 <span className=" info1 w-[500px] h-[400px] text-2xl py-12 px-10 bg-[#d84040] text-white leading-loose" 
                     style={ {fontFamily: "'Saira Condensed', sans-serif" }}>
                     Rakta is a project based for Health related sector.
@@ -30,12 +30,7 @@ export default function OurMission() {
             </div>
 
             {/* Mission 2 */}
-            <div className="mission-bottom w-full flex">
-
-                <div className='flex w-[50%] justify-center'>
-                    <img src={Image2} className='h-[400px]' />
-                </div>
-
+            <div className="mission-top w-full flex space-x-16">
                 <span className=" info1 w-[500px] h-[400px] text-2xl py-12 px-10 bg-[#d84040] text-white leading-loose" 
                     style={ {fontFamily: "'Saira Condensed', sans-serif" }}>
                     Rakta is a project based for Health related sector.
