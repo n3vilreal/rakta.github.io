@@ -11,7 +11,7 @@ export default function Navigation() {
   return (
     
     <>
-      <ul className="flex text-white text-xl font-semibold w-[80%] space-x-6
+      <ul className="flex text-white text-xl font-semibold w-[80%] space-x-6 max-md:hidden
                     max-md:flex-col max-md:bg-inherit max-md:pl-4 max-md:pt-4 max-md:font-medium max-md:space-x-0
                     max-md:absolute max-md:top-[72px] max-md:right-0 max-md:w-[100vw] max-md:h-[100vh] max-md:space-y-4">
             <span

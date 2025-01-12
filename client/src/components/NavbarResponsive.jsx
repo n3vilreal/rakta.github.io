@@ -15,7 +15,7 @@ export default function Navbar() {
                       md:hidden">
         {/* Logo */}
         <Navigation />
-        <img src={LogoWhite} alt="" className="h-14 ml-6 " />
+        <img src={LogoWhite} alt="" className="h-16 ml-6 " />
         <div className="flex justify-end space-x-8 pr-5 w-[75%]">
           {/* Login */}
           <div className="flex items-center space-x-7 text-white text-md font-semibold">
@@ -26,8 +26,7 @@ export default function Navbar() {
               Log In
             </button>
             
-            <button className="flex items-center space-x-2"
-                onClick={toggleNav}>
+            <button className="flex items-center space-x-2 text-3xl">
                 <GiHamburgerMenu />
             </button>
           </div>

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 // import SignUp from '../layout/SignUp';
 import Navbar from '../components/Navbar';
 import NumberOtp from '../layout/NumberOtp';
+import NavbarResponsive from '../components/NavbarResponsive';
 
 export default function LogIn() {
   // const [isSignUp, setIsSignUp] = useState(true);
@@ -14,6 +15,7 @@ export default function LogIn() {
   return (
     <>
     <Navbar/>
+    <NavbarResponsive/>
     {/* <div className="relative overflow-hidden">
         {isSignUp ? (
           <SignUp handelToggle={handelToggle} />
