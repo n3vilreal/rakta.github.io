@@ -1,25 +1,27 @@
 import React, { useState } from 'react';
-import SignIn from '../layout/SignIn';
-import SignUp from '../layout/SignUp';
+// import SignIn from '../layout/SignIn';
+// import SignUp from '../layout/SignUp';
 import Navbar from '../components/Navbar';
+import NumberOtp from '../layout/NumberOtp';
 
 export default function LogIn() {
-  const [isSignUp, setIsSignUp] = useState(true);
+  // const [isSignUp, setIsSignUp] = useState(true);
 
-  const handelToggle = () => {
-    setIsSignUp(!isSignUp);
-  };
+  // const handelToggle = () => {
+  //   setIsSignUp(!isSignUp);
+  // };
 
   return (
     <>
     <Navbar/>
-    <div className="relative overflow-hidden">
+    {/* <div className="relative overflow-hidden">
         {isSignUp ? (
           <SignUp handelToggle={handelToggle} />
         ) : (
           <SignIn handelToggle={handelToggle} />
         )}
-    </div>
+    </div> */}
+    <NumberOtp/>
     </>
   );
 }
