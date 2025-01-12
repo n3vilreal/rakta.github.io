@@ -4,7 +4,6 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyA2i-NszVrPnjOUvUnPNwU8OR7jIWNH2p8",
   authDomain: "rakta-13ce1.firebaseapp.com",
@@ -18,6 +17,15 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+// Initialize Auth with phone auth settings
 const auth = getAuth(app);
+// Set default country for phone numbers (Nepal)
+auth.settings.appVerificationDisabledForTesting = false; // Enable real phone verification
+auth.languageCode = 'en'; // Set language for SMS
+auth.settings.phoneNumber = {
+  defaultCountry: 'NP', // Nepal
+  defaultNationalNumber: '', // Leave empty
+};
 
 export { app, auth };
