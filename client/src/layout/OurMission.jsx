@@ -5,7 +5,7 @@ import Image2 from '../assets/bloodBag.jpg';
 export default function OurMission() {
   return (
     <>
-    <div className='main flex w-full justify-center items-center'>
+    <div id="ourMission" className='main flex w-full justify-center items-center'>
     <div className='container flex flex-col  justify-center items-center mt-32 space-y-12 max-md:mt-5' >
 
         <div className="header text-6xl font-serif font-bold">
