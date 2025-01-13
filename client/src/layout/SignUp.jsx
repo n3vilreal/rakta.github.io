@@ -88,7 +88,7 @@ export default function SignUp({ handelToggle }) {
       {/* Right Half */}
       <div className="left-half w-[50%] flex flex-col align-center justify-center max-sm:w-[100%]">
         {/* Logo */}
-        <div className="logo items-center justify-center flex w-full mt-14">
+        <div className="logo items-center justify-center flex w-full mt-14 max-md:mt-4">
           <img src={Logo} alt="" className="h-28" />
         </div>
         {/* Sign In Options */}

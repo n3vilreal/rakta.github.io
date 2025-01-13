@@ -5,6 +5,7 @@ import OurMission from "../layout/OurMission";
 import { useLocation } from "react-router-dom";
 import { Element, scroller } from "react-scroll";
 import NavbarResponsive from "../components/NavbarResponsive";
+import DonorForm from "../components/DonorForm";
 
 export default function LandingPage() {
   const location = useLocation();
@@ -22,6 +23,7 @@ export default function LandingPage() {
   }, [location]);
   return (
     <div>
+      <DonorForm />
       <Navbar />
       <NavbarResponsive />
       <Element name="home">
