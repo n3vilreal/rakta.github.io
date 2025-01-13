@@ -44,7 +44,7 @@ export default function Navigation({ navbaeStatus, toggleNav }) {
           className="cursor-pointer text-red-500 transition-all duration-600 ease-in-out hover:text-red-300"
         //   onClick={() => handleGoToPage("profile")}
         >
-          Map
+          Find Blood
         </RouterLink>
 
         {/* <span

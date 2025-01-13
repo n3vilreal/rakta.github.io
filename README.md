@@ -5,7 +5,6 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Available scripts](#available-scripts)
 - [Project Structure](#project-structure)
 - [Contributors](#contributors)
 
@@ -15,9 +14,9 @@
   Acceptor can just put his location and blood group number then location of the donor appear on the screen and he can call him/her and go for further process.*
   
 ## ⚙Features
-- **Requesting Blood** : You can just open rakta and go to map and enter your required blood.
-- **Donating Blood** : First type your info and blood group now others can reach you.
-- **Easy Contact** : You can easily contact to donors through numbers provided there.
+- **Requesting Blood** : Requesting of blood is fast as it is our first priority.
+- **Donating Blood** : Giving some infos and you are ready to be a donor.
+- **Easy Contact** : Can directly call via call option.
 - **Map location** : In maps you can view every blood location you can also filter blood group.
 
 ## 🔍Installation
@@ -72,7 +71,7 @@ npx tailwindcss init -p
 
 There are two parts to use this platform and they are either donor and acceptor:
 
-- **For Donor**
+- ## **For Donor**
 
 i) Making Id
 *Steps:*
@@ -90,7 +89,7 @@ ii) Donating
 
 
 
-- **For Accceptors**
+- ## **For Accceptors**
 
 *Steps:*
 1. Go to ![Rakta]
@@ -98,12 +97,6 @@ ii) Donating
 3. Add Your blood type and you can see variation of blood matching with you.
 4. Chat/Call your matched donor.
 5. Now donor will come to the required place and helps you.
-
-
-
-## 📜Available Scripts
-
-
 
 
 ## 📏Project Structure
