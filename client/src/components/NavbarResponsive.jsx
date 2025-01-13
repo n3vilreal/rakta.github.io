@@ -53,7 +53,7 @@ export default function Navbar() {
                 Log In
               </button>
             )}
-            <button onClick={toggleNav} className="flex items-center space-x-2">
+            <button onClick={toggleNav} className="flex items-center space-x-2 text-2xl">
               <GiHamburgerMenu />
             </button>
           </div>
