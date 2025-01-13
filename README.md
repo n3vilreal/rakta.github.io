@@ -14,9 +14,9 @@
   Acceptor can just put his location and blood group number then location of the donor appear on the screen and he can call him/her and go for further process.*
   
 ## ⚙Features
-- **Requesting Blood** : You can just open rakta and go to map and enter your required blood.
-- **Donating Blood** : First type your info and blood group now others can reach you.
-- **Easy Contact** : You can easily contact to donors through numbers provided there.
+- **Requesting Blood** : Requesting of blood is fast as it is our first priority.
+- **Donating Blood** : Giving some infos and you are ready to be a donor.
+- **Easy Contact** : Can directly call via call option.
 - **Map location** : In maps you can view every blood location you can also filter blood group.
 
 ## 🔍Installation
