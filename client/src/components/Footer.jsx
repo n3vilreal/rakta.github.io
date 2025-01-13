@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <>
       <div className="main">
-        <footer className="bg-[#28282b] w-full flex flex-col md:flex-row justify-between items-center p-4">
+        <footer className="bg-[#28282b] w-full flex flex-col md:flex-row justify-between items-center p-4 max-md:hidden">
           {/* <div className="flex items-center justify-center w-full md:w-auto mb-4 md:mb-0">
             <img src={Logo} alt="" className="h-500 w-500" />
           </div> */}

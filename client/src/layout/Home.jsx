@@ -113,13 +113,13 @@ function Home() {
               <p>info@rakta.com.np</p>
             </span>
             <div className="socials flex space-x-4">
-              <button className="whatsapp text-3xl">
+              <button className="whatsapp text-3xl hover:text-red-600 hover:text-5xl transition-all duration-600 ease-in-out">
                 <FaWhatsapp />
               </button>
-              <button className="facebook text-3xl">
+              <button className="facebook text-3xl hover:text-red-600 hover:text-5xl transition-all duration-600 ease-in-out">
                 <TiSocialFacebookCircular />
               </button>
-              <button className="instagram text-3xl">
+              <button className="instagram text-3xl hover:text-red-600 hover:text-5xl transition-all duration-600 ease-in-out">
                 <FaInstagram />
               </button>
             </div>
