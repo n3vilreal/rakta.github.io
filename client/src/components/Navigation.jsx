@@ -46,6 +46,13 @@ export default function Navigation({ navbaeStatus, toggleNav }) {
         >
           Find Blood
         </RouterLink>
+        <RouterLink
+        to={"/dashboard"}
+          className="cursor-pointer text-red-500 transition-all duration-600 ease-in-out hover:text-red-300"
+        //   onClick={() => handleGoToPage("profile")}
+        >
+          Dashboard
+        </RouterLink>
 
         {/* <span
           className="cursor-pointer text-red-500 transition-all duration-600 ease-in-out hover:scale-125"
