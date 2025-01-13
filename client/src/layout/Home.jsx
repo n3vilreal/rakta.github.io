@@ -49,7 +49,7 @@ function Home() {
       </div>
 
       {/* Right Partation */}
-      <div className="right-partation h-[100vh] w-[50%] flex flex-col justify-center max-md:w-[100w] max-md:mt-6">
+      <div className="right-partation h-[100vh] w-[50%] flex flex-col justify-center max-md:w-[100w] max-md:mt-2">
         <div className="right-components ml-6 mt-32 max-md:mt-12 max-md:w-[90vw]">
           <div className="description w-[65%] max-md:w-[90vw]">
             <span

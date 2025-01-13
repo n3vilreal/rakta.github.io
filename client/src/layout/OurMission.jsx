@@ -21,7 +21,7 @@ export default function OurMission() {
             <div className="mission flex flex-col md:flex-row items-center space-y-10 max-md:space-y-0 md:space-x-16 max-md:w-[100vw]">
               <div className="flex flex-1 justify-center max-md:w-[100vw]">
                 <span
-                  className="info w-[35vw] text-lg md:text-2xl p-8 bg-[#d84040] text-white leading-loose text-center md:text-left"
+                  className="info w-[35vw] text-lg md:text-2xl p-8 bg-[#d84040] text-white leading-loose text-center md:text-left max-md:w-[100vw]"
                   style={{ fontFamily: "'Saira Condensed', sans-serif" }}
                 >
                   Rakta is a project based in the health sector. Due to high
@@ -45,7 +45,7 @@ export default function OurMission() {
             <div className="mission flex flex-col md:flex-row items-center space-y-10 max-md:space-y-0 md:space-x-16 max-md:w-[100vw]">
               <div className="flex flex-1 justify-center max-md:w-[100vw]">
                 <span
-                  className="info w-[35vw] text-lg md:text-2xl p-8 bg-[#d84040] text-white leading-loose text-center md:text-left"
+                  className="info w-[35vw] text-lg md:text-2xl p-8 bg-[#d84040] text-white leading-loose text-center md:text-left max-md:w-[100vw]"
                   style={{ fontFamily: "'Saira Condensed', sans-serif" }}
                 >
                   Individuals often post on social media hoping for a response
