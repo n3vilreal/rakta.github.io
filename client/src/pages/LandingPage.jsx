@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 import { Element, scroller } from "react-scroll";
 import NavbarResponsive from "../components/NavbarResponsive";
 import DonorForm from "../components/DonorForm";
+import Footer from "../components/Footer";
 
 export default function LandingPage() {
   const location = useLocation();
@@ -33,6 +34,7 @@ export default function LandingPage() {
       <Element name="our-mission">
         <OurMission />
       </Element>
+      <Footer/>
     </div>
   );
 }
