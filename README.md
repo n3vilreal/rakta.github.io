@@ -81,7 +81,7 @@ i) Making Id
 
 ii) Donating
   *steps*
-  1. After getting call open your m
+  1. After getting call open your 
 
 
 
@@ -123,14 +123,14 @@ ii) Donating
    <a href="https://github.com/n3vilreal"><img src=https://avatars.githubusercontent.com/u/168754188?v=100" width="100px;" alt="Nebil Khanal"/><br /><sub><b>Nebil Khanal</b></sub></a>
    <br />
    <a href="https://github.com/n3vilreal" title="Github">💻</a>
-   <a href="#Nebil" title="Front End">🖥️</a>
+   <a href="#Nebil" title="Front End Devloper">🖥️</a>
    </td>
       
 <td align="center" valign="top" width="14.28%">
    <a href="https://github.com/KravKo"><img src=https://avatars.githubusercontent.com/u/86314507?v=4=100" width="100px;" alt="Krishav Koirala"/><br /><sub><b>Krishav Koirala</b></sub></a>
    <br />
    <a href="https://github.com/KravKo" title="Github">💻</a>
-   <a href="#KravKo" title="Back End">🖥️</a>
+   <a href="#KravKo" title="Developer">🖥️</a>
       </td>
 
    <td align="center" valign="top" width="14.28%">
