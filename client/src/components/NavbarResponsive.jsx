@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="main bg-[#28282B] flex items-center py-2 w-[100%] sticky top-0 z-10 md:hidden">
+      <div className="main bg-[#28282B] flex items-center py-2 w-[100%] sticky top-0 z-50 md:hidden">
         {/* Logo */}
         <Navigation navbaeStatus={navbaeStatus} toggleNav={toggleNav} />
         <img src={LogoWhite} alt="" className="h-14 ml-6 " />

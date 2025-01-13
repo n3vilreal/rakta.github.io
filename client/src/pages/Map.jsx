@@ -9,7 +9,7 @@ function Map() {
       <div className="main w-[100vw]">
         <NavbarResponsive />
         <Navbar />
-        <div className=" z-0 container bg-red-600 w-[100vw]">
+        <div className=" container bg-red-600 w-[100vw]">
           <MapComponent />
         </div>
       </div>
