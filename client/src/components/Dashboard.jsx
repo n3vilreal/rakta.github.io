@@ -94,36 +94,36 @@ function Dashboard() {
       ) : (
         <table className="w-full border-collapse border border-gray-300">
           <thead>
-            <tr className="text-red-600 bg-[#28282b]">
-              <th className="border border-gray-300 p-2">Full Name</th>
-              <th className="border border-gray-300 p-2">Phone Number</th>
-              <th className="border border-gray-300 p-2">Blood Group</th>
-              <th className="border border-gray-300 p-2">Actions</th>
+            <tr className="text-red-300 bg-[#28282b]">
+              <th className="border-2 border-black p-2">Full Name</th>
+              <th className="border-2 border-black p-2">Phone Number</th>
+              <th className="border-2 border-black p-2">Blood Group</th>
+              <th className="border-2 border-black p-2">Actions</th>
             </tr>
           </thead>
-          <tbody>
-            {userData.map((data) => (
-              <tr key={data.id}>
-                <td className="border border-gray-300 p-2">{data.fullName}</td>
-                <td className="border border-gray-300 p-2">{data.phoneNumber}</td>
-                <td className="border border-gray-300 p-2">{data.bloodGroup}</td>
-                <td className="border border-gray-300 p-2">
-                  <button
-                    onClick={() => handleEdit(data)}
-                    className="bg-yellow-500 text-white px-2 py-1 rounded mr-2"
-                  >
-                    Edit
-                  </button>
-                  <button
-                    onClick={() => handleDelete(data.id)}
-                    className="bg-red-500 text-white px-2 py-1 rounded"
-                  >
-                    Delete
-                  </button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
+                <tbody className="text-center bg-red-100"> 
+                  {userData.map((data) => (
+                    <tr key={data.id} className="">
+                      <td className="border-2 border-black p-2 ">{data.fullName}</td>
+                      <td className="border-2 border-black p-2">{data.phoneNumber}</td>
+                      <td className="border-2 border-black p-2">{data.bloodGroup}</td>
+                      <td className="border-2 border-black p-2">
+                        <button
+                          onClick={() => handleEdit(data)}
+                          className="bg-blue-500 text-white px-2 py-1 rounded mr-2"
+                        >
+                          Edit
+                        </button>
+                        <button
+                          onClick={() => handleDelete(data.id)}
+                          className="bg-red-600 text-white px-2 py-1 rounded"
+                        >
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
         </table>
       )}
     </div>
