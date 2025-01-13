@@ -75,7 +75,7 @@ There are two parts to use this platform and they are either donor and acceptor:
 
 i) Making Id
 *Steps:*
-1. Go to ![Rakta]
+1. Go to **Rakta**
 2. Click Donate Now.
 3. You will be redirected to sign in/ sign up page.
 4. Sign in giving all the required details.
@@ -84,7 +84,7 @@ i) Making Id
 
 ii) Donating
   *steps*
-  1. After getting call open your app and see the code of hospital if it verifies you are good to go.
+  1. After getting call you are good to go.
 
 
 
@@ -92,7 +92,7 @@ ii) Donating
 - ## **For Accceptors**
 
 *Steps:*
-1. Go to ![Rakta]
+1. Go to **Rakta**
 2. Press Map.
 3. Add Your blood type and you can see variation of blood matching with you.
 4. Chat/Call your matched donor.
