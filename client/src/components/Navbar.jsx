@@ -30,7 +30,7 @@ export default function Navbar() {
         <img src={LogoWhite} alt="" className="h-24 ml-6" />
           {/* Navigation */}
 
-          <div className="justify-center items-center flex w-[20vw]">
+          <div className="justify-center items-center flex w-full">
           <Navigation/>
           </div>
           {/* Login */}
