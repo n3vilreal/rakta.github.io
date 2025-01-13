@@ -72,7 +72,7 @@ npx tailwindcss init -p
 
 There are two parts to use this platform and they are either donor and acceptor:
 
-- **For Donor**
+- ## **For Donor**
 
 i) Making Id
 *Steps:*
@@ -90,7 +90,7 @@ ii) Donating
 
 
 
-- **For Accceptors**
+- ## **For Accceptors**
 
 *Steps:*
 1. Go to ![Rakta]
