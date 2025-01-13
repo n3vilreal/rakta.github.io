@@ -22,10 +22,11 @@ export default function OurMission() {
                         <span className=" info1 w-[500px] text-2xl py-12 px-10 bg-[#d84040] text-white leading-loose
                                         max-md:w-[100vw] max-md:h-[100%] max-md:text-center" 
                             style={ {fontFamily: "'Saira Condensed', sans-serif" }}>
-                            Every individual try to post a status on social media hoping for response and connecting to donor,
-                             as it may takes time we raktas makes it easier for them.
-                              Acceptor can just put his location and blood group number,
-                              then the location of the donor appears on the screen and he can call him/her and go for further process.
+                            Rakta is a project based in Health sector. 
+                            Due to high accidents and blood loss, blood cancer patients 
+                            and others loss of blood, Need of blood is important. 
+                            Every individual could not buy blood bag due to high cost for them. 
+                            Here our web application comes into play acting as bridge between Blood provider and consumer. 
                         </span>
                     </div>
                     <div className='flex w-[75%] justify-around max-md:w-[100vw] max-md:h-[100%] max-md:hidden'>
@@ -40,10 +41,11 @@ export default function OurMission() {
                         <span className=" info1 w-[500px] text-2xl py-12 px-10 bg-[#d84040] text-white leading-loose
                                         max-md:w-[100vw] max-md:h-[100%] max-md:text-center" 
                             style={ {fontFamily: "'Saira Condensed', sans-serif" }}>
-                            Rakta is a project based for Health related sector.
-                            Due to high accidents and blood loss, blood is vital.
-                            Every individual could not buy blood bag due to high cost for them.
-                            Here our web application plays a vital role in connecting donors and acceptors. 
+                            Every individual try to post a status on social media hoping for response and connecting to donor, 
+                            as it may takes time we raktas makes it easier for them.  
+                            Acceptor can just put his location and blood group number, 
+                            then the location of the donor appears on the screen and he 
+                            can call him/her and go for further process.
                         </span>
                     </div>
                     <div className='flex w-[75%] justify-around max-md:w-[100vw] max-md:h-[100%]'>

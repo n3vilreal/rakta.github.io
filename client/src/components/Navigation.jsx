@@ -3,12 +3,20 @@ import { Link as RouterLink, useNavigate } from "react-router-dom";
 
 export default function Navigation({ navbaeStatus, toggleNav }) {
   const navigate = useNavigate();
+//   const goToPage = useGoToPage();
 
   const handleRedirectAndScroll = (section) => {
     // Navigate to "/" with the scrollTo parameter
     navigate(`/?scrollTo=${section}`);
     toggleNav(); // Close the navigation menu after redirect
   };
+
+//   const handleGoToPage = (section) => {
+//     // Navigate to "/" with the scrollTo parameter
+//     goToPage(`/${section}`);
+//     toggleNav(); // Close the navigation menu after redirect
+//   };
+  
 
   return (
     <>
@@ -30,24 +38,14 @@ export default function Navigation({ navbaeStatus, toggleNav }) {
         >
           Our Mission
         </span>
-        <span
-          className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
-          onClick={() => handleRedirectAndScroll("map")}
+
+        {/* <span
+          className="cursor-pointer text-red-500 transition-all duration-600 ease-in-out hover:scale-125"
+        //   onClick={() => handleGoToPage("profile")}
         >
-          Blood Compatibility
-        </span>
-        <RouterLink
-          className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
-          to={"/map"}
-        >
-          Map
-        </RouterLink>
-        <span
-          className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
-          onClick={() => handleRedirectAndScroll("map")}
-        >
-          Fundraiser
-        </span>
+          My Profile
+        </span> */}
+
       </ul>
     </>
   );
