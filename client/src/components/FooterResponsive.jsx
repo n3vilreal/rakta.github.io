@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="main md:hidden max-w-[100vw] text-white flex flex-col underline">
             <footer className="bg-[#28282b] max-w-[100vw] flex justify-between items-center py-4 flex-col">
                 <div className='flex items-center max-md:flex-col'>
-                  Privacy Poliy
+                  Privacy Policy
                 </div>
                 <div className='flex items-center max-md:flex-col'>
                   Terms and Conditions
