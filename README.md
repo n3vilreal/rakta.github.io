@@ -63,6 +63,11 @@ npx tailwindcss init -p
 ```bash
   npm install firebase
 ```
+8. To indicate open sheet map
+
+```bash
+   npm install leaflet@1.9.4 react-leaflet@4.2.1
+```
    
 ## ✍Usage
 
