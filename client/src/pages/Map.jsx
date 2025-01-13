@@ -5,13 +5,12 @@ import Navbar from "../components/Navbar";
 function Map() {
   return (
     <>
-    <Navbar/>
-      <div className="container mx-auto p-4">
-        <h1 className=" flex justify-center text-2xl font-bold mb-4">
-          Blood Donner Locations
-        </h1>
-        <MapComponent />
-      </div>
+    <div className="main w-[100vw]">
+      <Navbar/>
+        <div className="container bg-red-600 w-[100vw]">
+          <MapComponent />
+        </div>
+    </div>
     </>
   );
 }
