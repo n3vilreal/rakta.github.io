@@ -38,31 +38,13 @@ export default function Navigation({ navbaeStatus, toggleNav }) {
         >
           Our Mission
         </span>
-        {/* <span
-          className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
-          onClick={() => handleRedirectAndScroll("map")}
-        >
-          Blood Compatibility
-        </span>
-        <RouterLink
-          className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
-          to={"/map"}
-        >
-          Map
-        </RouterLink>
-        <span
-          className="cursor-pointer hover:text-red-500 transition-all duration-600 ease-in-out"
-          onClick={() => handleRedirectAndScroll("map")}
-        >
-          Fundraiser
-        </span> */}
 
-        <span
+        {/* <span
           className="cursor-pointer text-red-500 transition-all duration-600 ease-in-out hover:scale-125"
         //   onClick={() => handleGoToPage("profile")}
         >
           My Profile
-        </span>
+        </span> */}
 
       </ul>
     </>
