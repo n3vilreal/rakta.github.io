@@ -68,7 +68,7 @@ export default function MapComponent() {
       {/* Search Form */}
       <div className="h-[70vh] rounded-lg shadow-lg">
 
-          <div className="relative z-[1000] bg-white p-3 rounded-lg shadow-md">
+          <div className="relative z-[1000] bg-white p-3 shadow-md">
             <form onSubmit={handleSearch} className="flex gap-2">
               <input
                 type="text"
