@@ -1,4 +1,3 @@
-// src/firebase/auth.js
 import { auth, db } from "./firebase";
 import { 
   RecaptchaVerifier, 
@@ -7,9 +6,11 @@ import {
   createUserWithEmailAndPassword,
   updateProfile
 } from "firebase/auth";
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import { 
   setDoc, 
   doc, 
+  getDoc, 
   serverTimestamp,
   writeBatch
 } from "firebase/firestore";
@@ -112,7 +113,6 @@ export const saveUserToFirestore = async (user) => {
   const userRef = doc(db, "users", user.uid);
 
   try {
-    // Prepare user data
     const userData = {
       uid: user.uid,
       name: user.displayName || '',
@@ -125,21 +125,17 @@ export const saveUserToFirestore = async (user) => {
       lastLoginAt: serverTimestamp()
     };
 
-    // Add to batch
     batch.set(userRef, userData, { merge: true });
-
-    // Commit the batch
     await batch.commit();
     console.log('User saved to Firestore successfully');
     
     return userData;
   } catch (error) {
     console.error('Error saving user to Firestore:', error);
-    // Attempt to retry once if it's a connection error
     if (error.code === 'unavailable' || error.code === 'resource-exhausted') {
       try {
-        await new Promise(resolve => setTimeout(resolve, 1000)); // Wait 1 second
-        await batch.commit(); // Retry the commit
+        await new Promise(resolve => setTimeout(resolve, 1000)); 
+        await batch.commit(); 
         console.log('User saved to Firestore successfully on retry');
         return userData;
       } catch (retryError) {
@@ -151,16 +147,43 @@ export const saveUserToFirestore = async (user) => {
   }
 };
 
-// Helper function to clean up resources
-export const cleanup = () => {
-  if (window.recaptchaVerifier) {
-    window.recaptchaVerifier.clear();
-    window.recaptchaVerifier = null;
+export const getUserFromFirestore = async (uid) => {
+  try {
+    const userRef = doc(db, "users", uid);
+    const docSnap = await getDoc(userRef);
+    if (docSnap.exists()) {
+      return docSnap.data();
+    } else {
+      console.log("No such document!");
+      return null;
+    }
+  } catch (error) {
+    console.error('Error getting user from Firestore:', error);
+    throw error;
   }
-  confirmationResult = null;
 };
 
-// Auto-cleanup on window unload
-if (typeof window !== 'undefined') {
-  window.addEventListener('unload', cleanup);
-}
+export const signInWithEmail = async (email, password) => {
+  try {
+    const userCredential = await signInWithEmailAndPassword(auth, email, password);
+    return userCredential.user;
+  } catch (error) {
+    throw new Error(getAuthErrorMessage(error.code));
+  }
+};
+
+const getAuthErrorMessage = (errorCode) => {
+  switch (errorCode) {
+    case 'auth/invalid-email':
+      return 'Invalid email address';
+    case 'auth/user-disabled':
+      return 'This account has been disabled';
+    case 'auth/user-not-found':
+      return 'No account found with this email';
+    case 'auth/wrong-password':
+      return 'Incorrect password';
+    default:
+      return 'An error occurred during sign in';
+  }
+};
+

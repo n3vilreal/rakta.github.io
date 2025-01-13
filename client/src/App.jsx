@@ -4,6 +4,7 @@ import Profile from "./pages/Profile";
 import { AuthProvider } from "./contexts/authContext/Index";
 import Login from "./pages/Login";
 import Map from "./pages/Map";
+import 'leaflet/dist/leaflet.css';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/map" element={<Map />} />
             <Route path="/login" element={<Login />} />
           </Routes>
         </BrowserRouter>
