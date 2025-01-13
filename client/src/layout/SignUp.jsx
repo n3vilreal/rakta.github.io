@@ -94,7 +94,7 @@ export default function SignUp({ handelToggle }) {
         {/* Sign In Options */}
         <div className="sign-in-options w-full mt-5 flex flex-col items-center justify-center">
           <div className="sign-in text-4xl font-bold text-center">Sign Up</div>
-          <div className="options flex justify-center items-center mt-5 space-x-3">
+          <div className="options flex justify-center items-center mt-5 space-x-3 max-md:hidden">
             <div className="p-[3px] shadow-[2px_2px_2px_rgba(0,0,0,0.2)] h-10 w-10 flex border-solid border-[1px] border-slate-300 items-center justify-center rounded-2xl cursor-pointer">
               <CiFacebook size={42} style={{ strokeWidth: 0.7 }} />
             </div>
