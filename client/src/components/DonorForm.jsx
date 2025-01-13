@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
 import { push, ref } from "firebase/database";
 import { database } from "../firebase/firebase";
+import { useAuth } from "../contexts/authContext/Index"; // Added this import
 
 export default function DonorForm({ showForm, toggleForm }) {
+  const { currentUser } = useAuth(); // Added this line
   const [formData, setFormData] = useState({
     fullName: "",
     phoneNumber: "",
@@ -54,6 +56,7 @@ export default function DonorForm({ showForm, toggleForm }) {
     try {
       await push(ref(database, "donors"), {
         ...formData,
+        userId: currentUser?.uid || null, // Added this line
         timestamp: Date.now(),
       });
 
