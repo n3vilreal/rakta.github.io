@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState} from 'react';
 import HomeBackground from '../assets/HomeBackground.svg';
 import Logo from '../assets/Logo.svg';
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
@@ -6,11 +6,16 @@ import { FaEnvelope } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { TiSocialFacebookCircular } from "react-icons/ti";
 import { FaInstagram } from "react-icons/fa";
+import { set } from 'firebase/database';
+import DonorForm from "../components/DonorForm";
 
 function Home() {
+  const [showForm, setShowForm] = useState(false);
+
+  const toggleForm = () => setShowForm((prev) => !prev);
   return (
     <div id="Home" className="main h-[100%] w-[100%] flex">
-        
+        <DonorForm showForm={showForm} toggleForm={toggleForm} />
         {/* Left Partation */}
         <div className='left-partation h-[100%] w-[50%] flex max-md:hidden'>
             <img src={HomeBackground} alt="Home Background" className="min-h-100 min-w-100" />
@@ -36,7 +41,7 @@ function Home() {
                 </span>
               </div>
               {/* Donate blood button */}
-              <button className="donate group text-4xl mt-5 flex items-center text-red-600 font-semibold border-4 border-red-600 px-3 py-2 rounded-full transition-all duration-300 ease-in-out 
+              <button onClick={toggleForm} className="donate group text-4xl mt-5 flex items-center text-red-600 font-semibold border-4 border-red-600 px-3 py-2 rounded-full transition-all duration-300 ease-in-out 
                                hover:bg-red-600 hover:text-white 
                                 max-md:text-xl" 
               style={ {fontFamily: "'Saira Condensed', sans-serif" }}>
