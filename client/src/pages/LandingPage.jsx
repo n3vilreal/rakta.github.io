@@ -7,6 +7,7 @@ import { Element, scroller } from "react-scroll";
 import NavbarResponsive from "../components/NavbarResponsive";
 import DonorForm from "../components/DonorForm";
 import Footer from "../components/Footer";
+import FooterResponsive from "../components/FooterResponsive";
 
 export default function LandingPage() {
   const location = useLocation();
@@ -35,6 +36,7 @@ export default function LandingPage() {
         <OurMission />
       </Element>
       <Footer/>
+      <FooterResponsive/>
     </div>
   );
 }
