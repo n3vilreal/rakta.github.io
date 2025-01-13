@@ -39,12 +39,13 @@ export default function Navigation({ navbaeStatus, toggleNav }) {
           Our Mission
         </span>
 
-        <span
+        <RouterLink
+        to={"/map"}
           className="cursor-pointer text-red-500 transition-all duration-600 ease-in-out hover:scale-125"
         //   onClick={() => handleGoToPage("profile")}
         >
           Map
-        </span>
+        </RouterLink>
 
         {/* <span
           className="cursor-pointer text-red-500 transition-all duration-600 ease-in-out hover:scale-125"
