@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
 import { push, ref } from "firebase/database";
 import { database } from "../firebase/firebase";
 
@@ -14,15 +15,19 @@ export default function DonorForm({ showForm, toggleForm }) {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
 
+  const [mapCenter, setMapCenter] = useState([27.7172, 85.3240]); // Default center (Kathmandu)
+
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
+          const { latitude, longitude } = position.coords;
           setFormData((prev) => ({
             ...prev,
-            latitude: position.coords.latitude.toString(),
-            longitude: position.coords.longitude.toString(),
+            latitude: latitude.toString(),
+            longitude: longitude.toString(),
           }));
+          setMapCenter([latitude, longitude]);
         },
         () => {
           setError("Error getting location. Please enable location services.");
@@ -67,7 +72,21 @@ export default function DonorForm({ showForm, toggleForm }) {
     }
   };
 
-  if (!showForm) return null; // Don't render if form is not visible
+  const MapClickHandler = () => {
+    useMapEvents({
+      click: (e) => {
+        const { lat, lng } = e.latlng;
+        setFormData((prev) => ({
+          ...prev,
+          latitude: lat.toFixed(6).toString(),
+          longitude: lng.toFixed(6).toString(),
+        }));
+      },
+    });
+    return null;
+  };
+
+  if (!showForm) return null;
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
@@ -131,6 +150,10 @@ export default function DonorForm({ showForm, toggleForm }) {
             </select>
           </div>
           <div className="grid grid-cols-2 gap-4">
+          <p className="text-sm text-gray-500 mt-2">
+              This is your current location.
+            </p>
+            <br />
             <input
               type="text"
               name="latitude"
@@ -147,6 +170,28 @@ export default function DonorForm({ showForm, toggleForm }) {
               placeholder="Longitude"
               className="w-full px-4 py-2 border rounded bg-gray-50"
             />
+          </div>
+          <div className="h-64 w-full mb-4">
+          <p className="text-sm text-gray-500 mt-2">
+              Or Mark on the map to select your location.
+            </p>
+            <MapContainer
+              center={mapCenter}
+              zoom={13}
+              className="h-full w-full rounded"
+            >
+              <TileLayer
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker
+                position={[
+                  parseFloat(formData.latitude),
+                  parseFloat(formData.longitude),
+                ]}
+              />
+              <MapClickHandler />
+            </MapContainer>
+            
           </div>
           <button
             type="submit"
