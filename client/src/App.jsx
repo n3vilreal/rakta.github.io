@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Map from "./pages/Map";
 import 'leaflet/dist/leaflet.css';
 import Dashboard from "./components/Dashboard";
+import UserProfile from "./pages/UserProfile";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/userprofile" element={<UserProfile />} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>
