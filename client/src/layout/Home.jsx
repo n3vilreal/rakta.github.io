@@ -14,9 +14,6 @@ import { useAuth } from "../contexts/authContext/Index";
 function Home() {
   const [showForm, setShowForm] = useState(false);
 
-  const toggleForm = () => {
-    setShowForm((prev) => !prev);
-  };
   const { userLoggedIn } = useAuth();
   const navigate = useNavigate();
   const handleClick = () => {
@@ -25,6 +22,9 @@ function Home() {
     } else {
       toggleForm();
     }
+  };
+  const toggleForm = () => {
+    setShowForm((prev) => !prev);
   };
 
   const lifeSavedCount = 0;
