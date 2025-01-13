@@ -68,22 +68,24 @@ export default function MapComponent() {
       {/* Search Form */}
       <div className="h-[70vh] rounded-lg shadow-lg">
 
-          <div className="relative z-[1000] bg-white p-3 rounded-lg shadow-md">
-            <form onSubmit={handleSearch} className="flex gap-2">
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search location..."
-                className="px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <button 
-                type="submit" 
-                className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
-              >
-                Search
-              </button>
-            </form>
+          <div className='map-header'>
+            <div className="relative z-[1000] bg-white p-3 shadow-md">
+              <form onSubmit={handleSearch} className="flex gap-2">
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search for Blood "
+                  className="px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <button 
+                  type="submit" 
+                  className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
           </div>
 
         <MapContainer
