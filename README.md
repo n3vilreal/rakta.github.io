@@ -5,7 +5,6 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Available scripts](#available-scripts)
 - [Project Structure](#project-structure)
 - [Contributors](#contributors)
 
@@ -98,12 +97,6 @@ ii) Donating
 3. Add Your blood type and you can see variation of blood matching with you.
 4. Chat/Call your matched donor.
 5. Now donor will come to the required place and helps you.
-
-
-
-## 📜Available Scripts
-
-
 
 
 ## 📏Project Structure
