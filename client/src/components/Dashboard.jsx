@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { ref, onValue, remove, update } from "firebase/database";
 import { database } from "../firebase/firebase";
 import { useAuth } from "../contexts/authContext/Index";
+import Navbar from "./Navbar";
+import NavbarResponsive from "./NavbarResponsive";
 
 function Dashboard() {
   const { currentUser } = useAuth();
@@ -48,6 +50,9 @@ function Dashboard() {
   };
 
   return (
+    <>
+    <Navbar />
+    <NavbarResponsive />
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
       {editData ? (
@@ -122,6 +127,7 @@ function Dashboard() {
         </table>
       )}
     </div>
+    </>
   );
 }
 
