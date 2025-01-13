@@ -1,61 +1,71 @@
-import React from 'react';
-import Image1 from '../assets/manDonatingBlood.jpg';
-import Image2 from '../assets/bloodBag.jpg';
+import React from "react";
+import Image1 from "../assets/manDonatingBlood.jpg";
+import Image2 from "../assets/bloodBag.jpg";
 
 export default function OurMission() {
   return (
     <>
-    <div id="ourMission" className='main flex w-full justify-center items-center'>
-        <div className='container flex flex-col  justify-center items-center mt-16 space-y-12 max-md:mt-5' >
+      <div
+        id="ourMission"
+        className="main flex w-full justify-center items-center bg-gray-100 py-16 px-4"
+      >
+        <div className="container flex flex-col justify-center items-center max-w-7xl space-y-12">
+          <div className="header text-4xl md:text-6xl font-serif font-bold text-center">
+            <span>Our Mission</span>
+            <hr className="bg-black h-1 w-20 md:w-60 mx-auto mt-4" />
+          </div>
 
-            <div className="header text-6xl font-serif font-bold max-md:ml-3">
-                <span>Our Mission</span>
-                <hr className='bg-black h-1 w-60'/>
+          {/* Missions */}
+          <div className="missions flex flex-col space-y-16">
+            {/* Mission 1 */}
+            <div className="mission flex flex-col md:flex-row items-center space-y-10 md:space-y-0 md:space-x-16">
+              <div className="flex flex-1 justify-center">
+                <span
+                  className="info w-full max-w-xl text-lg md:text-2xl p-8 bg-[#d84040] text-white leading-loose text-center md:text-left"
+                  style={{ fontFamily: "'Saira Condensed', sans-serif" }}
+                >
+                  Rakta is a project based in the health sector. Due to high
+                  accidents and blood loss, blood cancer patients, and other
+                  blood loss cases, the need for blood is important. Every
+                  individual might not afford a blood bag due to its high cost.
+                  Our web application acts as a bridge between blood providers
+                  and consumers.
+                </span>
+              </div>
+              <div className="flex flex-1 justify-center">
+                <img
+                  src={Image1}
+                  alt="Man Donating Blood"
+                  className="w-full max-w-md rounded-lg shadow-lg"
+                />
+              </div>
             </div>
 
-            {/* Missions */}
-            <div className='missions flex flex-col space-y-10 max-md:space-y-0'>
-                
-                {/* Mission 1 */}
-                <div className="mission-top w-full flex space-x-16 max-md:flex-col items-center">
-                    <div className='flex w-[50%] justify-center max-md:w-[100vw] max-md:h-[100%]'>
-                        <span className=" info1 w-[500px] text-2xl py-12 px-10 bg-[#d84040] text-white leading-loose
-                                        max-md:w-[100vw] max-md:h-[100%] max-md:text-center" 
-                            style={ {fontFamily: "'Saira Condensed', sans-serif" }}>
-                            Rakta is a project based in Health sector. 
-                            Due to high accidents and blood loss, blood cancer patients 
-                            and others loss of blood, Need of blood is important. 
-                            Every individual could not buy blood bag due to high cost for them. 
-                            Here our web application comes into play acting as bridge between Blood provider and consumer. 
-                        </span>
-                    </div>
-                    <div className='flex w-[75%] justify-around max-md:w-[100vw] max-md:h-[100%] max-md:hidden'>
-                        <img src={Image1} className='w-[50%] max-md:w-[100vw] max-md:h-[100%]' />
-                    </div>
-                </div>
-
-                {/* Mission 2 */}
-                
-                <div className="mission-top w-full flex space-x-16 items-center flex-row-reverse max-md:flex-col-reverse max-md:space-x-0">
-                    <div className='flex w-[50%] justify-center max-md:w-[100vw] max-md:h-[100%]'>
-                        <span className=" info1 w-[500px] text-2xl py-12 px-10 bg-[#d84040] text-white leading-loose
-                                        max-md:w-[100vw] max-md:h-[100%] max-md:text-center" 
-                            style={ {fontFamily: "'Saira Condensed', sans-serif" }}>
-                            Every individual try to post a status on social media hoping for response and connecting to donor, 
-                            as it may takes time we raktas makes it easier for them.  
-                            Acceptor can just put his location and blood group number, 
-                            then the location of the donor appears on the screen and he 
-                            can call him/her and go for further process.
-                        </span>
-                    </div>
-                    <div className='flex w-[75%] justify-around max-md:w-[100vw] max-md:h-[100%]'>
-                        <img src={Image2} className='w-[50%] max-md:w-[100vw] max-md:h-[100%]' />
-                    </div>
-                </div>
-
+            {/* Mission 2 */}
+            <div className="mission flex flex-col-reverse md:flex-row items-center space-y-10 md:space-y-0 md:space-x-16">
+              <div className="flex flex-1 justify-center">
+                <span
+                  className="info w-full max-w-xl text-lg md:text-2xl p-8 bg-[#d84040] text-white leading-loose text-center md:text-left"
+                  style={{ fontFamily: "'Saira Condensed', sans-serif" }}
+                >
+                  Individuals often post on social media hoping for a response
+                  and connection to donors, which might take time. Rakta makes
+                  it easier by allowing the acceptor to post their location and
+                  blood group number. The donor's location appears on the
+                  screen, and the acceptor can then contact them directly.
+                </span>
+              </div>
+              <div className="flex flex-1 justify-center">
+                <img
+                  src={Image2}
+                  alt="Blood Bag"
+                  className="w-full max-w-md rounded-lg shadow-lg"
+                />
+              </div>
             </div>
-    </div>
-    </div>
+          </div>
+        </div>
+      </div>
     </>
-  )
+  );
 }
