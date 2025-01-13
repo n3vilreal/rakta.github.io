@@ -81,7 +81,7 @@ i) Making Id
 
 ii) Donating
   *steps*
-  1. After getting call open your m
+  1. After getting call open your 
 
 
 
