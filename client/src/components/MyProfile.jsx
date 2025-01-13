@@ -23,7 +23,7 @@ export default function MyProfile() {
                             You have donated blood <br />
                             <span className='text-red-600'>{bloodDonationCounter} </span>times.
                         </span>
-                        <div className="contact-info flex text-sm max-md:flex-col max-md:items-center">
+                        <div className="contact-info flex text-sm max-md:flex-col max-md:items-center flex-col">
                             {/* This holds person's contact info */}
                             <span>Email: {userEmail}</span>
                             <span>Phone Number: {userPhoneNumber}</span>
