@@ -8,8 +8,8 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { ref, onValue } from 'firebase/database';
-import { database } from '../firebase/firebase';
+import { ref, onValue } from "firebase/database";
+import { database } from "../firebase/firebase";
 
 // Import marker icons
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
@@ -26,6 +26,8 @@ L.Icon.Default.mergeOptions({
 
 // Function to handle map clicks and add markers
 function LocationMarker({ markers, setMarkers }) {
+  
+
   useMapEvents({
     click(e) {
       const { lat, lng } = e.latlng;
@@ -52,8 +54,8 @@ export default function MapComponent() {
 
   // Fetch donors from Firebase Realtime Database
   useEffect(() => {
-    const donorsRef = ref(database, 'donors');
-    
+    const donorsRef = ref(database, "donors");
+
     const unsubscribe = onValue(donorsRef, (snapshot) => {
       const donorsData = [];
       snapshot.forEach((childSnapshot) => {
@@ -64,7 +66,7 @@ export default function MapComponent() {
             position: [parseFloat(donor.latitude), parseFloat(donor.longitude)],
             fullName: donor.fullName,
             phoneNumber: donor.phoneNumber,
-            bloodGroup: donor.bloodGroup
+            bloodGroup: donor.bloodGroup,
           });
         }
       });
@@ -82,11 +84,15 @@ export default function MapComponent() {
 
   // Filter donors based on blood group
   const filteredDonors = selectedBloodGroup
-    ? donors.filter(donor => donor.bloodGroup === selectedBloodGroup)
+    ? donors.filter((donor) => donor.bloodGroup === selectedBloodGroup)
     : donors;
 
   const removeMarker = (markerId) => {
     setMarkers(markers.filter((marker) => marker.id !== markerId));
+  };
+
+  const handleCallNow = () => {
+    window.location.href = `tel:${phoneNumber}`;
   };
 
   return (
@@ -164,11 +170,20 @@ export default function MapComponent() {
               <Popup>
                 <div className="min-w-[200px]">
                   <h3 className="font-semibold mb-2">{donor.fullName}</h3>
-                  <p className="text-sm mb-1">Blood Group: {donor.bloodGroup}</p>
+                  <p className="text-sm mb-1">
+                    Blood Group: {donor.bloodGroup}
+                  </p>
                   <p className="text-sm mb-1">Phone: {donor.phoneNumber}</p>
                   <p className="text-sm mb-1">
-                    Location: {donor.position[0].toFixed(4)}, {donor.position[1].toFixed(4)}
+                    Location: {donor.position[0].toFixed(4)},{" "}
+                    {donor.position[1].toFixed(4)}
                   </p>
+                  <button
+                    onClick={handleCallNow}
+                    className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full"
+                  >
+                    Call now
+                  </button>
                 </div>
               </Popup>
             </Marker>
