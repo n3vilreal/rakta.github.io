@@ -117,7 +117,7 @@ function Home() {
                 <FaWhatsapp />
               </button>
               <button className="facebook text-3xl hover:text-red-600 hover:text-5xl transition-all duration-600 ease-in-out">
-                <TiSocialFacebookCircular />
+                <a href="https://www.facebook.com/nepalredcross"><TiSocialFacebookCircular /></a>
               </button>
               <button className="instagram text-3xl hover:text-red-600 hover:text-5xl transition-all duration-600 ease-in-out">
                 <FaInstagram />

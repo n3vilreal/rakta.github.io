@@ -7,7 +7,7 @@ export default function OurMission() {
     <>
       <div
         id="ourMission"
-        className="main flex w-full justify-center items-center bg-gray-100 py-16 px-4"
+        className="main flex w-full justify-center items-center bg-gray-100 py-16 px-4 max-md:w-[100vw]"
       >
         <div className="container flex flex-col justify-center items-center max-w-7xl space-y-12">
           <div className="header text-4xl md:text-6xl font-serif font-bold text-center">
@@ -16,12 +16,12 @@ export default function OurMission() {
           </div>
 
           {/* Missions */}
-          <div className="missions flex flex-col space-y-16">
+          <div className="missions flex flex-col space-y-0 space-x-0 max-md:space-y-0 max-md:w-[100vw]">
             {/* Mission 1 */}
-            <div className="mission flex flex-col md:flex-row items-center space-y-10 md:space-y-0 md:space-x-16">
-              <div className="flex flex-1 justify-center">
+            <div className="mission flex flex-col md:flex-row items-center space-y-10 max-md:space-y-0 md:space-x-16 max-md:w-[100vw]">
+              <div className="flex flex-1 justify-center max-md:w-[100vw]">
                 <span
-                  className="info w-full max-w-xl text-lg md:text-2xl p-8 bg-[#d84040] text-white leading-loose text-center md:text-left"
+                  className="info w-[35vw] text-lg md:text-2xl p-8 bg-[#d84040] text-white leading-loose text-center md:text-left"
                   style={{ fontFamily: "'Saira Condensed', sans-serif" }}
                 >
                   Rakta is a project based in the health sector. Due to high
@@ -32,20 +32,20 @@ export default function OurMission() {
                   and consumers.
                 </span>
               </div>
-              <div className="flex flex-1 justify-center">
+              <div className="flex justify-center max-md:w-[100vw]">
                 <img
                   src={Image1}
                   alt="Man Donating Blood"
-                  className="w-full max-w-md rounded-lg shadow-lg"
+                  className="w-full max-w-md shadow-lg max-md:w-[100vw]"
                 />
               </div>
             </div>
 
             {/* Mission 2 */}
-            <div className="mission flex flex-col-reverse md:flex-row items-center space-y-10 md:space-y-0 md:space-x-16">
-              <div className="flex flex-1 justify-center">
+            <div className="mission flex flex-col md:flex-row items-center space-y-10 max-md:space-y-0 md:space-x-16 max-md:w-[100vw]">
+              <div className="flex flex-1 justify-center max-md:w-[100vw]">
                 <span
-                  className="info w-full max-w-xl text-lg md:text-2xl p-8 bg-[#d84040] text-white leading-loose text-center md:text-left"
+                  className="info w-[35vw] text-lg md:text-2xl p-8 bg-[#d84040] text-white leading-loose text-center md:text-left"
                   style={{ fontFamily: "'Saira Condensed', sans-serif" }}
                 >
                   Individuals often post on social media hoping for a response
@@ -59,7 +59,7 @@ export default function OurMission() {
                 <img
                   src={Image2}
                   alt="Blood Bag"
-                  className="w-full max-w-md rounded-lg shadow-lg"
+                  className="w-full max-w-md shadow-lg"
                 />
               </div>
             </div>
