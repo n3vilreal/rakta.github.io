@@ -15,11 +15,10 @@
   Acceptor can just put his location and blood group number then location of the donor appear on the screen and he can call him/her and go for further process.*
   
 ## ⚙Features
-- **Requesting Blood** : 
-- **Donating Blood** :
-- **Easy Contact** :
-- **Map location** :
-- **Fundraiser** :
+- **Requesting Blood** : You can just open rakta and go to map and enter your required blood.
+- **Donating Blood** : First type your info and blood group now others can reach you.
+- **Easy Contact** : You can easily contact to donors through numbers provided there.
+- **Map location** : In maps you can view every blood location you can also filter blood group.
 
 ## 🔍Installation
 **Follow these steps to get started with Rakta**
@@ -86,7 +85,7 @@ i) Making Id
 
 ii) Donating
   *steps*
-  1. After getting call open your 
+  1. After getting call open your app and see the code of hospital if it verifies you are good to go.
 
 
 
