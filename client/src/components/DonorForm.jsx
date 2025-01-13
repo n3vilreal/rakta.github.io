@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
-import { push, ref } from "firebase/database";
+import { ref, onValue, push, get } from "firebase/database";
 import { database } from "../firebase/firebase";
-import { useAuth } from "../contexts/authContext/Index"; // Added this import
+import { useAuth } from "../contexts/authContext/Index";
 
 export default function DonorForm({ showForm, toggleForm }) {
-  const { currentUser } = useAuth(); // Added this line
+  const { currentUser } = useAuth();
   const [formData, setFormData] = useState({
     fullName: "",
     phoneNumber: "",
@@ -16,29 +16,70 @@ export default function DonorForm({ showForm, toggleForm }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
-
-  const [mapCenter, setMapCenter] = useState([27.7172, 85.3240]); // Default center (Kathmandu)
+  const [mapCenter, setMapCenter] = useState([27.7172, 85.3240]);
 
   useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          setFormData((prev) => ({
-            ...prev,
-            latitude: latitude.toString(),
-            longitude: longitude.toString(),
-          }));
-          setMapCenter([latitude, longitude]);
-        },
-        () => {
-          setError("Error getting location. Please enable location services.");
+    const fetchUserData = async () => {
+      if (!currentUser?.uid) return;
+
+      try {
+        // First, check if the user has any existing donations
+        const donorsRef = ref(database, 'donors');
+        const snapshot = await get(donorsRef);
+        
+        if (snapshot.exists()) {
+          // Find the most recent donation by this user
+          let mostRecentDonation = null;
+          let mostRecentTimestamp = 0;
+
+          snapshot.forEach((childSnapshot) => {
+            const donation = childSnapshot.val();
+            if (donation.userId === currentUser.uid && donation.timestamp > mostRecentTimestamp) {
+              mostRecentDonation = donation;
+              mostRecentTimestamp = donation.timestamp;
+            }
+          });
+
+          // If found, populate the form with the most recent data
+          if (mostRecentDonation) {
+            setFormData(prev => ({
+              ...prev,
+              fullName: mostRecentDonation.fullName || "",
+              phoneNumber: mostRecentDonation.phoneNumber || "",
+            }));
+          }
         }
-      );
-    } else {
-      setError("Geolocation is not supported by your browser.");
-    }
-  }, []);
+      } catch (err) {
+        console.error("Error fetching user data:", err);
+        setError("Error loading your previous information.");
+      }
+    };
+
+    const setupLocationTracking = () => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const { latitude, longitude } = position.coords;
+            setFormData(prev => ({
+              ...prev,
+              latitude: latitude.toString(),
+              longitude: longitude.toString(),
+            }));
+            setMapCenter([latitude, longitude]);
+          },
+          () => {
+            setError("Error getting location. Please enable location services.");
+          }
+        );
+      } else {
+        setError("Geolocation is not supported by your browser.");
+      }
+    };
+
+    // Run both operations
+    fetchUserData();
+    setupLocationTracking();
+  }, [currentUser]);
 
   const handleChange = (e) => {
     setFormData({
@@ -56,18 +97,16 @@ export default function DonorForm({ showForm, toggleForm }) {
     try {
       await push(ref(database, "donors"), {
         ...formData,
-        userId: currentUser?.uid || null, // Added this line
+        userId: currentUser?.uid || null,
         timestamp: Date.now(),
       });
 
       setSuccess(true);
-      setFormData({
-        fullName: "",
-        phoneNumber: "",
+      // Only reset certain fields, keeping the user's personal info
+      setFormData(prev => ({
+        ...prev,
         bloodGroup: "",
-        latitude: formData.latitude,
-        longitude: formData.longitude,
-      });
+      }));
     } catch {
       setError("Error submitting form. Please try again.");
     } finally {
@@ -79,7 +118,7 @@ export default function DonorForm({ showForm, toggleForm }) {
     useMapEvents({
       click: (e) => {
         const { lat, lng } = e.latlng;
-        setFormData((prev) => ({
+        setFormData(prev => ({
           ...prev,
           latitude: lat.toFixed(6).toString(),
           longitude: lng.toFixed(6).toString(),
@@ -153,7 +192,7 @@ export default function DonorForm({ showForm, toggleForm }) {
             </select>
           </div>
           <div className="grid grid-cols-2 gap-4">
-          <p className="text-sm text-gray-500 mt-2">
+            <p className="text-sm text-gray-500 mt-2">
               This is your current location.
             </p>
             <br />
@@ -175,7 +214,7 @@ export default function DonorForm({ showForm, toggleForm }) {
             />
           </div>
           <div className="h-64 w-full mb-4">
-          <p className="text-sm text-gray-500 mt-2">
+            <p className="text-sm text-gray-500 mt-2">
               Or Mark on the map to select your location.
             </p>
             <MapContainer
@@ -194,7 +233,6 @@ export default function DonorForm({ showForm, toggleForm }) {
               />
               <MapClickHandler />
             </MapContainer>
-            
           </div>
           <button
             type="submit"

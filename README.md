@@ -99,10 +99,6 @@ ii) Donating
 5. Now donor will come to the required place and helps you.
 
 
-## 📏Project Structure
-
-
-
 ## 🧑‍💻Contributors
 
 **Thank you all for your Hardwork 🙌**
