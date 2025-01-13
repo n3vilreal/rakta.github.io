@@ -26,30 +26,30 @@ function Home() {
       toggleForm();
     }
   };
-  const lifeSavedNumber = 0;
+
+  const lifeSavedCount = 0;
 
 
   const openMap = () => {
     navigate("/map");
   }
   return (
-    <div id="Home" className="main h-[100%] w-[100%] flex">
+    <div id="Home" className="main h-[100%] w-[100%] flex max-md:flex-col">
       <DonorForm showForm={showForm} toggleForm={toggleForm} />
       {/* Left Partation */}
-      <div className="left-partation h-[100%] w-[50%] flex max-md:hidden">
-        <div className="asbolute flex flex-col">
+      <div className="left-partation h-[100vh] w-[50%] flex items-center justify-center max-md:hidden"
+            style={{ fontFamily: "'Saira Condensed', sans-serif" }}
+            >
+        {/* <div className="group text-center text-8xl font-semibold border-8 border-red-600 px-16 py-10 rounded-full transition-all duration-300 ease-in-out hover:bg-red-600 hover:border-double hover:border-white">
             <div>Lives Saved</div>
-            <div>{lifeSavedNumber}</div>
-        </div>
-        <img
-          src={HomeBackground}
-          alt="Home Background"
-          className="min-h-100 min-w-100"
-        />
+            <div className="text-red-600 group-hover:text-white">{lifeSavedCount}</div>
+        </div> */}
+
+        <img src={HomeBackground} alt="" className="-mt-28"/>
       </div>
 
       {/* Right Partation */}
-      <div className="right-partation h-[100%] w-[50%] flex flex-col justify-center max-md:w-[100w] max-md:mt-6">
+      <div className="right-partation h-[100vh] w-[50%] flex flex-col justify-center max-md:w-[100w] max-md:mt-6">
         <div className="right-components ml-6 mt-32 max-md:mt-12 max-md:w-[90vw]">
           <div className="description w-[65%] max-md:w-[90vw]">
             <span
