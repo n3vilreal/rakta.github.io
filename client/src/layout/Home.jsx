@@ -40,10 +40,12 @@ function Home() {
       <div className="left-partation h-[100vh] w-[50%] flex items-center justify-center max-md:hidden"
             style={{ fontFamily: "'Saira Condensed', sans-serif" }}
             >
-        <div className="group text-center text-8xl font-semibold border-8 border-red-600 px-16 py-10 rounded-full transition-all duration-300 ease-in-out hover:bg-red-600">
+        {/* <div className="group text-center text-8xl font-semibold border-8 border-red-600 px-16 py-10 rounded-full transition-all duration-300 ease-in-out hover:bg-red-600 hover:border-double hover:border-white">
             <div>Lives Saved</div>
             <div className="text-red-600 group-hover:text-white">{lifeSavedCount}</div>
-        </div>
+        </div> */}
+
+        <img src={HomeBackground} alt="" className="-mt-28"/>
       </div>
 
       {/* Right Partation */}
