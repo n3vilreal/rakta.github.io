@@ -26,8 +26,6 @@ L.Icon.Default.mergeOptions({
 
 // Function to handle map clicks and add markers
 function LocationMarker({ markers, setMarkers }) {
-  
-
   useMapEvents({
     click(e) {
       const { lat, lng } = e.latlng;
@@ -91,7 +89,7 @@ export default function MapComponent() {
     setMarkers(markers.filter((marker) => marker.id !== markerId));
   };
 
-  const handleCallNow = () => {
+  const handleCallNow = (phoneNumber) => {
     window.location.href = `tel:${phoneNumber}`;
   };
 
@@ -179,7 +177,7 @@ export default function MapComponent() {
                     {donor.position[1].toFixed(4)}
                   </p>
                   <button
-                    onClick={handleCallNow}
+                    onClick={() => handleCallNow(donor.phoneNumber)}
                     className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full"
                   >
                     Call now
