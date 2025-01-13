@@ -5,6 +5,7 @@ import { AuthProvider } from "./contexts/authContext/Index";
 import Login from "./pages/Login";
 import Map from "./pages/Map";
 import 'leaflet/dist/leaflet.css';
+import UserProfile from "./pages/UserProfile";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/map" element={<Map />} />
             <Route path="/login" element={<Login />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/userprofile" element={<UserProfile />} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>
