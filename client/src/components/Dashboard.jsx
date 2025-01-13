@@ -94,7 +94,7 @@ function Dashboard() {
       ) : (
         <table className="w-full border-collapse border border-gray-300">
           <thead>
-            <tr>
+            <tr className="text-red-600 bg-[#28282b]">
               <th className="border border-gray-300 p-2">Full Name</th>
               <th className="border border-gray-300 p-2">Phone Number</th>
               <th className="border border-gray-300 p-2">Blood Group</th>
