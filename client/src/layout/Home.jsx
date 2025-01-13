@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import HomeBackground from "../assets/HomeBackground.svg";
+import HomeBackground from "../assets/homeBackground.png";
 import Logo from "../assets/Logo.svg";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaEnvelope } from "react-icons/fa6";
@@ -26,6 +26,7 @@ function Home() {
       toggleForm();
     }
   };
+  const lifeSavedNumber = 0;
 
 
   const openMap = () => {
@@ -36,6 +37,10 @@ function Home() {
       <DonorForm showForm={showForm} toggleForm={toggleForm} />
       {/* Left Partation */}
       <div className="left-partation h-[100%] w-[50%] flex max-md:hidden">
+        <div className="asbolute flex flex-col">
+            <div>Lives Saved</div>
+            <div>{lifeSavedNumber}</div>
+        </div>
         <img
           src={HomeBackground}
           alt="Home Background"
