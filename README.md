@@ -15,7 +15,7 @@
   Acceptor can just put his location and blood group number then location of the donor appear on the screen and he can call him/her and go for further process.*
   
 ## ⚙Features
-- **Requesting Blood** : 
+- **Requesting Blood** : You can just 
 - **Donating Blood** :
 - **Easy Contact** :
 - **Map location** :
